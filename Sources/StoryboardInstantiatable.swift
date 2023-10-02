@@ -207,7 +207,7 @@ func log(_ message: Any) {
   }
 }
 
-#else
+#elseif os(watchOS)
 import WatchKit
   
 let swizzleAwakeWithContext: Void = {

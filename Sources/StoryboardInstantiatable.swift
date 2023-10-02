@@ -21,7 +21,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
-
+#if os(visionOS)
+import UIKit
+#endif
 #if (canImport(UIKit) || canImport(AppKit) || canImport(WatchKit))
 
 extension DependencyContainer {

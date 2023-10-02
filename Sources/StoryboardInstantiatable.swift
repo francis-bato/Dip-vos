@@ -110,7 +110,7 @@ extension DependencyContainer {
 
 }
 
-#if os(watchOS)
+#if os(watchOS) || os(visionOS)
   public protocol StoryboardInstantiatableType {}
 #else
   public typealias StoryboardInstantiatableType = NSObjectProtocol
